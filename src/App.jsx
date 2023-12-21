@@ -1,18 +1,11 @@
+import { Header, Entry, TodoHistory } from "./components"
+
 const App = () => {
   return (
     <>
       <div className="container">
-        <section className="header">
-          <h1>React To-Do List</h1><span style={{fontSize: "2.5rem"}}>&trade;</span>
-          <h3>by Isaiah Vickers</h3>
-        </section>
-        <section className="todo-input">
-          <input type="text" name="todoInput" id="todoInput" placeholder="I need to..." />
-          <div className="todo-buttons">
-            <button>Add to list</button>
-            <button>Clear Field</button>
-          </div>
-        </section>
+        <Header />
+        <Entry />
         <section className="todo-history">
           <div className="todo-history-header">
             <h2>To Do:</h2>
