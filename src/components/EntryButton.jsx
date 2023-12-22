@@ -1,9 +1,5 @@
+const EntryButton = ({ buttonText, onClick }) => {
+  return <button onClick={onClick}>{buttonText}</button>;
+};
 
-
-const EntryButton = ({buttonText}) => {
-  return (
-    <button>{buttonText}</button>
-  )
-}
-
-export default EntryButton
+export default EntryButton;

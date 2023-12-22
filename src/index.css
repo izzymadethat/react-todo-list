@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 :root {
   --main-color: #02577a;
@@ -60,7 +60,6 @@ body {
 }
 
 .todo-input {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,6 +119,7 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  margin-bottom: 1.5rem;
 }
 
 .todo-history-header h2 {
@@ -141,9 +141,7 @@ body {
 }
 
 .to-do {
-  padding: 1rem 2rem;
   overflow-y: auto;
-  border: 2px solid var(--secondary-color);
   width: 100%;
 }
 
@@ -180,7 +178,10 @@ body {
   gap: 10px;
 
   & .todo-check {
-    border-color: var(--main-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2p;
+    cursor: pointer;
   }
 }

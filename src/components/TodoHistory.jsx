@@ -1,9 +1,15 @@
-import React from 'react'
+import TodoBox from "./TodoBox";
+import TodoHistoryHeader from "./TodoHistoryHeader";
 
 const TodoHistory = () => {
   return (
-    <div>TodoHistory</div>
-  )
-}
+    <section className="todo-history">
+      <TodoHistoryHeader />
+      <div className="list-container">
+        <TodoBox />
+      </div>
+    </section>
+  );
+};
 
-export default TodoHistory
+export default TodoHistory;
