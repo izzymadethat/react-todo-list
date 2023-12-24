@@ -1,12 +1,12 @@
 import TodoBox from "./TodoBox";
 import TodoHistoryHeader from "./TodoHistoryHeader";
 
-const TodoHistory = () => {
+const TodoHistory = ({ todoList }) => {
   return (
     <section className="todo-history">
       <TodoHistoryHeader />
       <div className="list-container">
-        <TodoBox />
+        <TodoBox todos={todoList} />
       </div>
     </section>
   );

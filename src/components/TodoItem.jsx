@@ -1,9 +1,13 @@
-const TodoItem = ({ task }) => {
+const TodoItem = ({ task, toggleComplete }) => {
   return (
     <div className="todo-item">
       <div className="todo-item-list">
-        <input type="checkbox" name="todo-item" className="todo-check" />
-        <label htmlFor="todo-item">{task}</label>
+        <p
+          className={`${task.completed ? "todo-item completed" : "todo-item"}`}
+          onClick={() => toggleComplete(task.id)}
+        >
+          {task.task}
+        </p>
       </div>
       <button>X</button>
     </div>
